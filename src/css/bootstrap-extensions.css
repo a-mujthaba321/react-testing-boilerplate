@@ -1,0 +1,29 @@
+.w3-animate-opacity {
+  animation: opac 0.7s;
+}
+@keyframes opac {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-enter {
+  right: 1000px;
+}
+
+.fade-enter-active {
+  right: 0px;
+  transition: 0.8s ease-in all;
+}
+
+.fade-appear {
+  opacity: 0.01;
+}
+
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
