@@ -6,10 +6,6 @@ import '../src/css/bootstrap-extensions.css';
 
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import AddCourse from '../src/components/AddCourse';
-import ViewPost from '../src/components/ViewPost';
-import CourseList from '../src/components/CourseList';
-
 import { Provider } from 'react-redux';
 
 import App from './components/App';
@@ -24,8 +20,6 @@ ReactDOM.render(
     <BrowserRouter>
       <div>
         <Switch>
-          <Route path="/AddCourse" component={AddCourse} />
-          <Route path="/ViewPost" component={ViewPost} />
           <Route path="/" component={App} />
         </Switch>
       </div>
